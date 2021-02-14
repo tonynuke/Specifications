@@ -1,1 +1,0 @@
-﻿dotnet nuget push bin/Release/Specification.1.0.0.nupkg --api-key testapikey --source http://localhost:5555/v3/index.json
