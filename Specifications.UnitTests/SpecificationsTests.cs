@@ -1,10 +1,9 @@
 using System;
 using System.Linq;
 using FluentAssertions;
-using Specifications;
 using Xunit;
 
-namespace SpecificationsTests
+namespace Specifications.UnitTests
 {
     public class SpecificationsTests
     {

@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		RuleSet.ruleset = RuleSet.ruleset
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecificationsTests", "SpecificationsTests\SpecificationsTests.csproj", "{26585066-3A0D-4C47-937F-0615187852C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Specifications.UnitTests", "Specifications.UnitTests\Specifications.UnitTests.csproj", "{3064DC5D-034E-44C4-9D77-5FC7EA48A1E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{C66D2A2D-29C4-4300-B4CD-51877AA94BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C66D2A2D-29C4-4300-B4CD-51877AA94BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C66D2A2D-29C4-4300-B4CD-51877AA94BFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26585066-3A0D-4C47-937F-0615187852C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26585066-3A0D-4C47-937F-0615187852C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26585066-3A0D-4C47-937F-0615187852C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26585066-3A0D-4C47-937F-0615187852C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3064DC5D-034E-44C4-9D77-5FC7EA48A1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3064DC5D-034E-44C4-9D77-5FC7EA48A1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3064DC5D-034E-44C4-9D77-5FC7EA48A1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3064DC5D-034E-44C4-9D77-5FC7EA48A1E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

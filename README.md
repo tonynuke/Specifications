@@ -6,7 +6,8 @@ DDD specifications c# implementation.
 Inherit from `SpecificationBase<T>` class or user `Specification<Entity>.Create`.
 ```c#
 Entity entity;
-var todaySpecification = Specification<Entity>.Create(entity => entity.CreationDate == Date);
+DateTime date = DateTime.Now;
+var specification = Specification<Entity>.Create(entity => entity.CreationDate == date);
 bool isSatisfied = todaySpecification.IsSatisfiedBy(entity);
 ```
 Other usage examples you can see in [tests](https://github.com/tonynuke/Specifications/tree/master/SpecificationsTests).
