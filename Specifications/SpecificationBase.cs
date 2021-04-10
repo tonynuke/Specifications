@@ -14,12 +14,29 @@ namespace Specifications
         /// </summary>
         public static readonly SpecificationBase<T> All = new AllSpecification<T>();
 
+        /// <summary>
+        /// And.
+        /// </summary>
+        /// <param name="left">Left specification.</param>
+        /// <param name="right">Right specification.</param>
+        /// <returns>And specification.</returns>
         public static SpecificationBase<T> operator &(
             SpecificationBase<T> left, SpecificationBase<T> right) => left.And(right);
 
+        /// <summary>
+        /// Or.
+        /// </summary>
+        /// <param name="left">Left specification.</param>
+        /// <param name="right">Right specification.</param>
+        /// <returns>Or specification.</returns>
         public static SpecificationBase<T> operator |(
             SpecificationBase<T> left, SpecificationBase<T> right) => left.Or(right);
 
+        /// <summary>
+        /// Not.
+        /// </summary>
+        /// <param name="spec">Specification.</param>
+        /// <returns>Not specification.</returns>
         public static SpecificationBase<T> operator !(SpecificationBase<T> spec) => spec.Not();
 
         /// <summary>
