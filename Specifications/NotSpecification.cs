@@ -27,7 +27,7 @@ namespace Specifications
             var expression = _specification.ToExpression();
             var notExpression = Expression.Not(expression.Body);
 
-            return Expression.Lambda<Func<T, bool>>(notExpression, expression.Parameters.Single());
+            return Expression.Lambda<Func<T, bool>>(notExpression, expression.Parameters);
         }
     }
 }

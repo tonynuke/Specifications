@@ -60,7 +60,7 @@ namespace Specifications
         }
 
         /// <summary>
-        /// Link specification with and condition.
+        /// Links specification with and condition.
         /// </summary>
         /// <param name="specification">Specification.</param>
         /// <returns>Specification <see cref="SpecificationBase{T}"/>.</returns>
@@ -77,7 +77,7 @@ namespace Specifications
         }
 
         /// <summary>
-        /// Link specification with and condition.
+        /// Links specification with or condition.
         /// </summary>
         /// <param name="specification">Specification.</param>
         /// <returns>Specification <see cref="SpecificationBase{T}"/>.</returns>
@@ -92,7 +92,7 @@ namespace Specifications
         }
 
         /// <summary>
-        /// Invert specification condition.
+        /// Inverts specification condition.
         /// </summary>
         /// <returns>Specification <see cref="SpecificationBase{T}"/>.</returns>
         public SpecificationBase<T> Not()

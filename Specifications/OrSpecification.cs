@@ -10,7 +10,6 @@ namespace Specifications
     internal sealed class OrSpecification<T> : SpecificationBase<T>
     {
         private readonly SpecificationBase<T> _left;
-
         private readonly SpecificationBase<T> _right;
 
         /// <summary>
@@ -31,9 +30,8 @@ namespace Specifications
             var rightExpression = _right.ToExpression();
 
             var invokedExpression = Expression.Invoke(rightExpression, leftExpression.Parameters);
-
-            return (Expression<Func<T, bool>>)Expression.Lambda(
-                Expression.OrElse(leftExpression.Body, invokedExpression), leftExpression.Parameters);
+            var body = Expression.OrElse(leftExpression.Body, invokedExpression);
+            return Expression.Lambda<Func<T, bool>>(body, leftExpression.Parameters);
         }
     }
 }
