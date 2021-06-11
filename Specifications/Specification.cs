@@ -23,7 +23,7 @@ namespace Specifications
         /// <returns>Specification <see cref="Specification{T}"/>.</returns>
         public static Specification<T> Create(Expression<Func<T, bool>> expression)
         {
-            return new (expression);
+            return new Specification<T>(expression);
         }
 
         /// <inheritdoc/>
