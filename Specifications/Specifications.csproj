@@ -10,9 +10,10 @@
 		<RepositoryUrl>https://github.com/tonynuke/Specifications</RepositoryUrl>
 		<Company>tonynuke</Company>
 		<PackageId>Tonynuke.Specifications</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<Description>DDD specifications c# implementation.</Description>
+		<Description>Tonynuke.Specifications - DDD specifications for c#.</Description>
+		<PackageTags>ddd, domain, driven, design, specification</PackageTags>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
