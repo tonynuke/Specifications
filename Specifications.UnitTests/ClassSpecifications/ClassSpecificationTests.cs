@@ -9,17 +9,20 @@ namespace Specifications.UnitTests.ClassSpecifications
     public class ClassSpecificationTests
     {
         [Fact]
-        public void Can_apply_specification()
+        public void Apply_specification()
         {
-            var expectedPerson = new Person("Ivan", "Moscow", DateTime.Parse("08/18/1985"));
+            var dateTime = DateTime.UtcNow.Date;
+            var expectedDateTime = dateTime.AddYears(5);
+
+            var expectedPerson = new Person("Ivan", "Moscow", expectedDateTime);
             var persons = new List<Person>
             {
-                new("John", "Ufa", DateTime.Parse("08/18/1985")),
+                new("John", "Ufa", dateTime),
                 expectedPerson,
-                new("Peter", "Moscow", DateTime.Parse("08/18/1965")),
+                new("Peter", "Moscow", dateTime),
             };
 
-            var birthAfterSpecification = new BirthAfterSpecification(DateTime.Parse("08/18/1980"));
+            var birthAfterSpecification = new BirthAtSpecification(expectedDateTime);
             var townSpecification = new TownSpecification("Moscow");
 
             var specification = birthAfterSpecification.And(townSpecification);

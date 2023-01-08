@@ -31,6 +31,7 @@ namespace Specifications
 
             var invokedExpression = Expression.Invoke(rightExpression, leftExpression.Parameters);
             var body = Expression.OrElse(leftExpression.Body, invokedExpression);
+
             return Expression.Lambda<Func<T, bool>>(body, leftExpression.Parameters);
         }
     }
